@@ -10,6 +10,9 @@ input {
   margin: 10px;
 }
 
+select {
+  width: 150px;
+}
 
 /**************
 CLASS SELECTORS
