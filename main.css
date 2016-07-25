@@ -1,33 +1,56 @@
+/****************
+ELEMENT SELECTORS
+****************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /**************
 CLASS SELECTORS
 **************/
 
 .navdiv {
-  width: 60%;
+  width: 75%;
   border: 1px solid black;
   background-color: pink;
   margin-left: 10%;
   margin-bottom: 10px;
 }
 
+.mainOptions {
+  border: 1px solid black;
+  width: 24%;
+  margin-left: 10%;
+  background-color: lightblue;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 .mainContent {
   border: 1px solid black;
   display: inline-block;
   float: right;
-  width: 34%;
-  margin-right: 30%;
+  width: 50%;
+  margin-right: 15%;
   background-color: #FFFF66;
-
-
 }
 
-.mainOptions {
-  border: 1px solid black;
-  width: 25%;
-  margin-left: 10%;
-  background-color: lightblue;
-  display: inline-block;
+.main-option-label {
+  margin-left: 10px;
 }
+
+.song {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.details {
+  margin-left: 20px;
+  font-size: .9em;
+}
+
+
 
 /**********************
 CLASS/ELEMENT SELECTORS
@@ -36,6 +59,7 @@ CLASS/ELEMENT SELECTORS
 .mainContent h2 {
   display: inline;
   font-size: 1em;
+  font-weight: normal;
 }
 
 .navbar li{
@@ -56,7 +80,7 @@ CLASS/ELEMENT/Pseudo SELECTORS
   content: " | ";
 }
 
-.mainContent h2:nth-of-type(n+3):before {
+.mainContent h2:first-of-type:before {
   content: none;
 }
 

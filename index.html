@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
   <meta charset="utf-8">
   <title>Music History</title>
@@ -20,16 +21,20 @@
   <div class="mainOptions">
     <label class="hidden" for"songLength">Song Length</label>
     <input type="range" name="songLength" id="songLength">
-      <label class="hidden">Artists</label>
-        <select>
+      <br>
+      <label class="main-option-label">Artists: </label>
+      <br>
+        <select class="dropdown">
           <option>Steely Dan</option>
           <option>LCD Soundsystem</option>
           <option>Beach Boys</option>
           <option>Outkast</option>
           <option>Talking Heads</option>
         </select>
-      <label class="hidden">Albums</label>
-        <select>
+      <br>
+      <label class="main-option-label">Albums: </label>
+      <br>
+        <select class="dropdown">
           <option>Aja</option>
           <option>LCD Soundsystem</option>
           <option>Surfs Up</option>
@@ -62,22 +67,38 @@
 
   </div>
   <div class="mainContent">
-    <h1>Your Gold Teeth</h1>
-      <h2>Steely Dan</h2>
-      <h2>Countdown to Ecstasy</h2>
-      <h2>Yacht Rock</h2>
-    <h1>Disco Infiltrator</h1>
-      <h2>LCD Soundsystem</h2>
-      <h2>LCD Soundsystem</h2>
-      <h2>Electronic/Dance</h2>
-    <h1>Naive Melody(This must be the place)</h1>
-      <h2>Talking Heads</h2>
-      <h2>Speaking In Tongues</h2>
-      <h2>New Wave/Alt Rock</h2>
-    <h1>Long Promised Road</h1>
-      <h2>Beach Boys</h2>
-      <h2>Surfs Up</h2>
-      <h2>Surf/Psychedelic</h2>
+    <div class="song">
+      <h1>Your Gold Teeth</h1>
+        <div class="details">
+          <h2>Steely Dan</h2>
+          <h2>Countdown to Ecstasy</h2>
+          <h2>Yacht Rock</h2>
+        </div>
+    </div>
+    <div class="song">
+      <h1>Disco Infiltrator</h1>
+        <div class="details">
+          <h2>LCD Soundsystem</h2>
+          <h2>LCD Soundsystem</h2>
+          <h2>Electronic/Dance</h2>
+        </div>
+    </div>
+    <div class="song">
+      <h1>Naive Melody (This must be the place)</h1>
+        <div class="details">
+          <h2>Talking Heads</h2>
+          <h2>Speaking In Tongues</h2>
+          <h2>New Wave/Alt Rock</h2>
+        </div>
+    </div>
+    <div class="song">
+      <h1>Long Promised Road</h1>
+        <div class="details">
+          <h2>Beach Boys</h2>
+          <h2>Surfs Up</h2>
+          <h2>Surf/Psychedelic</h2>
+        </div>
+    </div>
   </div>
 
 
