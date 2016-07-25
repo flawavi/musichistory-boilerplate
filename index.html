@@ -9,21 +9,23 @@
 </head>
 
 <body>
-  <div class="navdiv">
-    <nav>
-      <ul class="navbar">
-        <a href="#"><li>View Music</li></a>
-        <a href="#"><li>Add Music</li></a>
-        <a href="#"><li>Profile</li></a>
-      </ul>
-    </nav>
-  </div>
-  <div class="mainOptions">
-    <label class="hidden" for"songLength">Song Length</label>
-    <input type="range" name="songLength" id="songLength">
-      <br>
-      <label class="main-option-label">Artists: </label>
-      <br>
+  <div class="whole-contents">
+    <div class="navdiv">
+      <nav>
+        <ul class="navbar">
+          <a href="#"><li>View Music</li></a>
+          <a href="#"><li>Add Music</li></a>
+          <a href="#"><li>Profile</li></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-options">
+      <div>
+        <label class="hidden" for"songLength">Song Length</label>
+        <input type="range" name="songLength" id="songLength">
+      </div>
+      <div>
+        <label class="main-option-label">Artists: </label>
         <select class="dropdown">
           <option>Steely Dan</option>
           <option>LCD Soundsystem</option>
@@ -31,73 +33,87 @@
           <option>Outkast</option>
           <option>Talking Heads</option>
         </select>
-      <br>
+      </div>
       <label class="main-option-label">Albums: </label>
-      <br>
-        <select class="dropdown">
-          <option>Aja</option>
-          <option>LCD Soundsystem</option>
-          <option>Surfs Up</option>
-          <option>Stankonia</option>
-          <option>Speaking in Tongues</option>
+      <select class="dropdown">
+        <option>Aja</option>
+        <option>LCD Soundsystem</option>
+        <option>Surfs Up</option>
+        <option>Stankonia</option>
+        <option>Speaking in Tongues</option>
       </select>
-    <br>
-    <label>Genre</label>
-    <br>
-    <label class="hidden" for="yacht">Yacht Rock</label>
-    <input type="checkbox" id="yacht" name="yachtRock">
-
-    <label class="hidden" for="dance">Dance/Punk/Electronic</label>
-    <input type="checkbox" id="dance" name="dance">
-
-    <label class="hidden" for="surf">Surf/Rock/Psychedelia</label>
-    <input type="checkbox" id="surf" name="surf">
-
-    <label class="hidden" for="hiphop">Hip Hop</label>
-    <input type="checkbox" id="hiphop" name="hiphop">
-
-    <label class="hidden" for="newwave">New Wave/Post Punk/Art Rock</label>
-    <input type="checkbox" id="newwave" name="newwave">
-
-    <label class="hidden" for="jazz">Jäzz</label>
-    <input type="checkbox" id="jazz" name="jazz">
-
-    <button class="button">Filter</button>
-
-
-  </div>
-  <div class="mainContent">
-    <div class="song">
-      <h1>Your Gold Teeth</h1>
-        <div class="details">
-          <h2>Steely Dan</h2>
-          <h2>Countdown to Ecstasy</h2>
-          <h2>Yacht Rock</h2>
+      <div class="genrez">
+        <div>
+          <label>Genre</label>
         </div>
+        <div class="checkboxes">
+          <input type="checkbox" id="yacht" name="yachtRock">
+          <label class="genre" for="yacht">Yacht Rock</label>
+        </div>
+
+        <div class="checkboxes">
+          <input type="checkbox" id="dance" name="dance">
+          <label class="genre" for="dance">Dance</label>
+        </div>
+
+        <div class="checkboxes">
+          <input type="checkbox" id="surf" name="surf">
+          <label class="genre" for="surf">Surf</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" id="hiphop" name="hiphop">
+          <label class="genre" for="hiphop">Hip Hop</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" id="newwave" name="newwave">
+          <label class="genre" for="newwave">New Wave</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" id="jazz" name="jazz">
+          <label class="genre" for="jazz">Jäzz</label>
+        </div>
+      </div>
+
+
+
+
+      <button class="button">Filter</button>
+
+
     </div>
-    <div class="song">
-      <h1>Disco Infiltrator</h1>
-        <div class="details">
-          <h2>LCD Soundsystem</h2>
-          <h2>LCD Soundsystem</h2>
-          <h2>Electronic/Dance</h2>
-        </div>
-    </div>
-    <div class="song">
-      <h1>Naive Melody (This must be the place)</h1>
-        <div class="details">
-          <h2>Talking Heads</h2>
-          <h2>Speaking In Tongues</h2>
-          <h2>New Wave/Alt Rock</h2>
-        </div>
-    </div>
-    <div class="song">
-      <h1>Long Promised Road</h1>
-        <div class="details">
-          <h2>Beach Boys</h2>
-          <h2>Surfs Up</h2>
-          <h2>Surf/Psychedelic</h2>
-        </div>
+    <div class="main-content">
+      <div class="song">
+        <h1>Your Gold Teeth</h1>
+          <div class="details">
+            <h2>Steely Dan</h2>
+            <h2>Countdown to Ecstasy</h2>
+            <h2>Yacht Rock</h2>
+          </div>
+      </div>
+      <div class="song">
+        <h1>Disco Infiltrator</h1>
+          <div class="details">
+            <h2>LCD Soundsystem</h2>
+            <h2>LCD Soundsystem</h2>
+            <h2>Electronic/Dance</h2>
+          </div>
+      </div>
+      <div class="song">
+        <h1>Naive Melody</h1><h1 class="italics">(This must be the place)</h1>
+          <div class="details">
+            <h2>Talking Heads</h2>
+            <h2>Speaking In Tongues</h2>
+            <h2>New Wave/Alt Rock</h2>
+          </div>
+      </div>
+      <div class="song">
+        <h1>Long Promised Road</h1>
+          <div class="details">
+            <h2>Beach Boys</h2>
+            <h2>Surfs Up</h2>
+            <h2>Surf/Psychedelic</h2>
+          </div>
+      </div>
     </div>
   </div>
 
