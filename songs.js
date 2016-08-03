@@ -55,6 +55,12 @@ var addToDom = function (song, artist, album) {
             <h2>Genre</h2>
           </div>
       </div>`
+
+      document.getElementById("userSong").value = ""
+      document.getElementById("userArtist").value = "";
+      document.getElementById("userAlbum").value = "";
+
+
   // }
 }
 
@@ -75,7 +81,6 @@ var fireEvents = function () {
   replaceChar();
   joinify();
   songDetails();
-  // addToDom();
 }
 fireEvents();
 

@@ -10,15 +10,16 @@
 
 <body>
   <div class="container">
+
     <div>
       <nav class="navdiv">
         <ul class="navbar">
-          <li>View Music</li>
-          <li>Add Music</li>
-          <li>List Music</li>
+          <li id="list-music">List Music</li>
+          <li id="add-music">Add Music</li>
+          <li id="profile">Profile</li>
         </ul>
       </nav>
-      <div class="user-music hidden">
+      <div id="add-view" class="user-music hidden">
         <label for="userSong">Name Song</label>
         <input type="text" id="userSong">
         <label for="userArtist">Name Artist</label>
@@ -26,12 +27,13 @@
         <label for="userAlbum">Name Album</label>
         <input type="text" id="userAlbum">
 
-        <button>Get Music</button>
+        <button id="btn">Get Music</button>
       </div>
     </div>
+    <div id="list-view">
     <div class="main-options">
       <div>
-        <label class="song-length" for"songLength">Song Length</label>
+        <label class="song-length" for="songLength">Song Length</label>
         <input type="range" name="songLength" id="songLength">
       </div>
       <div>
@@ -44,37 +46,40 @@
           <option>Talking Heads</option>
         </select>
       </div>
-      <label class="main-option-label">Albums: </label>
-      <select class="dropdown">
-        <optgroup label="Steely Dan">
-          <option>Aja</option>
-          <option>Countdown to Ecstasy</option>
-          <option>Gaucho</option>
-        </optgroup>
-        <optgroup label="LCD Soundsystem">
-          <option>LCD Soundsystem</option>
-          <option>Sound of Silver</option>
-          <option>This is Happening</option>
-        </optgroup>
-        <optgroup label="Beach Boys">
-          <option>Surfs Up</option>
-          <option>Pet Sounds</option>
-          <option>Surfin' Safari</option>
-          <option>Surfin' U.S.A.</option>
-        </optgroup>
-        <optgroup label="Outkast">
-          <option>Stankonia</option>
-          <option>ATLiens</option>
-          <option>Aquemini</option>
-          <option>Speakerboxxx/The Love Below</option>
-        </optgroup>
-        <optgroup label="Talking Heads">
-          <option>Speaking in Tongues</option>
-          <option>Talking Heads: 77</option>
-          <option>Remain in Light</option>
-          <option>The Name of this Band is the Talking Heads</option>
-        </optgroup>
-      </select>
+      <div>
+        <label class="main-option-label">Albums: </label>
+        <select class="dropdown">
+          <optgroup label="Steely Dan">
+            <option>Aja</option>
+            <option>Countdown to Ecstasy</option>
+            <option>Gaucho</option>
+          </optgroup>
+          <optgroup label="LCD Soundsystem">
+            <option>LCD Soundsystem</option>
+            <option>Sound of Silver</option>
+            <option>This is Happening</option>
+          </optgroup>
+          <optgroup label="Beach Boys">
+            <option>Surfs Up</option>
+            <option>Pet Sounds</option>
+            <option>Surfin' Safari</option>
+            <option>Surfin' U.S.A.</option>
+          </optgroup>
+          <optgroup label="Outkast">
+            <option>Stankonia</option>
+            <option>ATLiens</option>
+            <option>Aquemini</option>
+            <option>Speakerboxxx/The Love Below</option>
+          </optgroup>
+          <optgroup label="Talking Heads">
+            <option>Speaking in Tongues</option>
+            <option>Talking Heads: 77</option>
+            <option>Remain in Light</option>
+            <option>The Name of this Band is the Talking Heads</option>
+          </optgroup>
+        </select>
+      </div>
+
       <div class="genre">
         <div>
           <label class="main-option-label">Genre</label>
@@ -109,8 +114,8 @@
           <input type="checkbox" id="jazz" name="jazz">
           <label class="genre" for="jazz">Jäzz</label>
         </div>
+      </div> <!--genre-->
 
-      </div>
       <div class="button">
         <button class="button">Filter</button>
       </div>
@@ -118,41 +123,12 @@
 
     </div>
     <div id="song-container" class="main-content">
-      <div class="song">
-        <h1>Your Gold Teeth</h1>
-          <div class="details">
-            <h2>Steely Dan</h2>
-            <h2>Countdown to Ecstasy</h2>
-            <h2>Yacht Rock</h2>
-          </div>
-      </div>
-      <div class="song">
-        <h1>Disco Infiltrator</h1>
-          <div class="details">
-            <h2>LCD Soundsystem</h2>
-            <h2>LCD Soundsystem</h2>
-            <h2>Electronic/Dance</h2>
-          </div>
-      </div>
-      <div class="song">
-        <h1>Naive Melody</h1><h1 class="italics">(This must be the place)</h1>
-          <div class="details">
-            <h2>Talking Heads</h2>
-            <h2>Speaking In Tongues</h2>
-            <h2>New Wave/Alt Rock</h2>
-          </div>
-      </div>
-      <div class="song">
-        <h1>Long Promised Road</h1>
-          <div class="details">
-            <h2>Beach Boys</h2>
-            <h2>Surfs Up</h2>
-            <h2>Surf/Psychedelic</h2>
-          </div>
-      </div>
+
+    </div>
     </div>
   </div>
 
   <script type="text/javascript" src="songs.js"></script>
+  <script type="text/javascript" src="events.js"></script>
 </body>
 </html>

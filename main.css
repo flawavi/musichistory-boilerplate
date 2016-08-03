@@ -14,6 +14,10 @@ select {
 CLASS SELECTORS
 **************/
 
+.user-music {
+
+}
+
 .addMusicBtn {
   margin-left: 10px;
   margin-bottom: 5px;
@@ -56,10 +60,6 @@ CLASS SELECTORS
   top: 5px;
 }
 
-.visible {
-  display: block;
-}
-
 .hidden {
   display: none;
 }
@@ -95,7 +95,6 @@ CLASS SELECTORS
   width: 50%;
   margin-right: 15%;
   background-color: #FFFF66;
-  height: 500px;
 }
 
 .main-option-label {
