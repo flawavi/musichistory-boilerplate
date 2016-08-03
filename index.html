@@ -9,15 +9,23 @@
 </head>
 
 <body>
-  <div class="whole-contents">
+  <div class="container">
     <div class="navdiv">
       <nav>
         <ul class="navbar">
           <a href="#"><li>View Music</li></a>
           <a href="#"><li>Add Music</li></a>
-          <a href="#"><li>Profile</li></a>
+          <a href="#"><li>List Music</li></a>
         </ul>
       </nav>
+      <div class="nav-div">
+        <label for="userSong">Name Song</label>
+        <input type="text" id="userSong">
+        <label for="userArtist">Name Artist</label>
+        <input type="text" id="userArtist">
+        <label for="userAlbum">Name Album</label>
+        <input type="text" id="userAlbum">
+      </div>
     </div>
     <div class="main-options">
       <div>
@@ -107,8 +115,8 @@
 
 
     </div>
-    <div class="main-content" id="song-container">
-      <!-- <div class="song">
+    <div class="main-content">
+      <div class="song">
         <h1>Your Gold Teeth</h1>
           <div class="details">
             <h2>Steely Dan</h2>
@@ -139,10 +147,10 @@
             <h2>Surfs Up</h2>
             <h2>Surf/Psychedelic</h2>
           </div>
-      </div> -->
+      </div>
     </div>
   </div>
 
-<script type="text/javascript" src="songs.js"></script>
+
 </body>
 </html>

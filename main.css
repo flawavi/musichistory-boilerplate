@@ -6,11 +6,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-input {
-  margin: 10px;
-  width: 20px; height: 20px;
-}
-
 select {
   width: 150px;
 }
@@ -18,6 +13,29 @@ select {
 /**************
 CLASS SELECTORS
 **************/
+
+.addMusicBtn {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 20px;
+}
+.rangeInput {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.songArtistAlbum {
+  width: 100px;
+  margin: 10px;
+}
+
+.checkbox {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+}
 
 .button {
   text-align: center;
@@ -37,6 +55,14 @@ CLASS SELECTORS
   left: 15px;
   top: 5px;
 }
+
+.visible {
+  display: block;
+}
+
+/*.hidden {
+  display: none;
+}*/
 
 .checkboxes {
   width: 50%;
@@ -124,11 +150,11 @@ CLASS/ELEMENT/Pseudo SELECTORS
   content: none;
 }
 
-.navbar a:before {
+.navbar li:before {
   content: "  //  ";
 }
 
-.navbar a:first-child:before {
+.navbar li:first-child:before {
   content: none;
 }
 
