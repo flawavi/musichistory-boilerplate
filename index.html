@@ -10,21 +10,23 @@
 
 <body>
   <div class="container">
-    <div class="navdiv">
-      <nav>
+    <div>
+      <nav class="navdiv">
         <ul class="navbar">
-          <a href="#"><li>View Music</li></a>
-          <a href="#"><li>Add Music</li></a>
-          <a href="#"><li>List Music</li></a>
+          <li>View Music</li>
+          <li>Add Music</li>
+          <li>List Music</li>
         </ul>
       </nav>
-      <div class="nav-div">
+      <div class="user-music hidden">
         <label for="userSong">Name Song</label>
         <input type="text" id="userSong">
         <label for="userArtist">Name Artist</label>
         <input type="text" id="userArtist">
         <label for="userAlbum">Name Album</label>
         <input type="text" id="userAlbum">
+
+        <button>Get Music</button>
       </div>
     </div>
     <div class="main-options">
@@ -115,7 +117,7 @@
 
 
     </div>
-    <div class="main-content">
+    <div id="song-container" class="main-content">
       <div class="song">
         <h1>Your Gold Teeth</h1>
           <div class="details">
@@ -151,6 +153,6 @@
     </div>
   </div>
 
-
+  <script type="text/javascript" src="songs.js"></script>
 </body>
 </html>

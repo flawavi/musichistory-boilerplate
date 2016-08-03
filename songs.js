@@ -40,34 +40,42 @@ var replaceChar = function () {
 var joinify = function () {
   for (var i = 0; i < stringSong.length; i++) {
     joinedSongs.unshift(stringSong[i].join(""));
-    songs = joinedSongs;
   }
     console.log(songs)
 }
 
-var songDetails = function () {
-
-}
-
-var addToDom = function () {
-  for (var i = 0; i < songs.length; i++) {
-  document.getElementById("song-container").innerHTML = `
+var addToDom = function (song, artist, album) {
+  // for (var i = 0; i < songs.length; i++) {
+  document.getElementById("song-container").innerHTML += `
     <div class="song">
-        <h1>${joinedSongs[i]}</h1>
+        <h1>${song}</h1>
           <div class="details">
-            <h2>Steely Dan</h2>
-            <h2>Countdown to Ecstasy</h2>
-            <h2>Yacht Rock</h2>
+            <h2>${artist}</h2>
+            <h2>${album}</h2>
+            <h2>Genre</h2>
           </div>
       </div>`
-  }
+  // }
 }
+
+var songDetails = function () {
+  joinedSongs.forEach(function(test){
+
+    var songName = test.slice(0, test.indexOf("-")-1);
+    var artistName = test.slice(test.indexOf("by")+3, test.indexOf("on the album"));
+    var albumName = test.slice(test.indexOf("album")+6);
+
+    addToDom(songName, artistName, albumName);
+  })
+}
+
 
 var fireEvents = function () {
   stringify();
   replaceChar();
   joinify();
-  addToDom();
+  songDetails();
+  // addToDom();
 }
 fireEvents();
 

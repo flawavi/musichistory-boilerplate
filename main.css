@@ -60,9 +60,9 @@ CLASS SELECTORS
   display: block;
 }
 
-/*.hidden {
+.hidden {
   display: none;
-}*/
+}
 
 .checkboxes {
   width: 50%;
