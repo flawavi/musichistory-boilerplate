@@ -24,6 +24,7 @@ button.click( function() {
   var userArtist = $("#userArtist").val();
   var userAlbum = $("#userAlbum").val();
   var newSong = userSong + " by " + userArtist + " on the album " + userAlbum + ".";
+
   joinedSongs.push(newSong);
   addToDom(userSong, userArtist, userAlbum);
 })

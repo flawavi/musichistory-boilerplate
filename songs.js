@@ -20,18 +20,6 @@ var songBank = (function () {
       </div>`)
       })
     },
-    // loadFavoriteSongs: function (callback) {
-    //   var xhr = new XMLHttpRequest();
-    //   xhr.open("GET", "songs.json");
-    //   xhr.addEventListener("load", function (evt) {
-    //     songsJSON = JSON.parse(evt.target.responseText).songs;
-    //     callback(favoriteSongs);
-    //   });
-    //   xhr.send();
-
-      // $.getJSON("songs.json", function (res) {
-      //    songsJSON = res.data
-      // },
       loadMoreFavoriteSongs: function(cb){
         $.getJSON("more-songs.json", function (res) {
         moreSongsJSON = res.songs;
