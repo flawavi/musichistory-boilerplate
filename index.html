@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
   <meta charset="utf-8">
@@ -27,7 +28,7 @@
         <label for="userAlbum">Name Album</label>
         <input type="text" id="userAlbum">
 
-        <button id="btn">Get Music</button>
+        <button id="btn" class="btn primary-btn">Get Music</button>
       </div>
     </div>
     <div id="list-view">
@@ -116,19 +117,19 @@
         </div>
       </div> <!--genre-->
 
-      <div class="button">
-        <button class="button">Filter</button>
+      <div class="filter">
+        <button class="btn">Filter</button>
       </div>
 
 
     </div>
-    <div id="song-container" class="main-content">
-
-    </div>
+    <div class="main-content">
+      <div id="song-container"></div>
+      <button id="moreSongsBtn" class="btn btn-primary">Load More Music</button>
     </div>
   </div>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="songs.js"></script>
   <script type="text/javascript" src="events.js"></script>
+  <script type="text/javascript" src="songs.js"></script>
 </body>
 </html>

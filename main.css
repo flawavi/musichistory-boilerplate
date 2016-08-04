@@ -13,9 +13,19 @@ select {
 /**************
 CLASS SELECTORS
 **************/
-
+.moreSongsBtn {
+  position: bottom;
+}
 .user-music {
 
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid lightgrey;
+  margin-left: 2px;
+  font-weight: bold;
+  font-size: 10px;
 }
 
 .addMusicBtn {
@@ -41,7 +51,7 @@ CLASS SELECTORS
   height: 20px;
 }
 
-.button {
+.filter {
   text-align: center;
   margin: 10px 0;
 }

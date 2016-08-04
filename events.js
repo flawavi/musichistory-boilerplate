@@ -19,7 +19,7 @@ listMusic.addEventListener("click", function(){
 
 var button = document.getElementById("btn");
 
-console.log(button);
+
 button.addEventListener("click", function() {
   var userSong = document.getElementById("userSong").value;
   var userArtist = document.getElementById("userArtist").value;

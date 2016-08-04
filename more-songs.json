@@ -1,0 +1,40 @@
+{
+  "songs": [
+    {
+      "artist": "Prom Night",
+      "name": "Bad Lover",
+      "album": "Ride the Cosmic Unicorn",
+      "genre": "Disco Punk"
+    },
+    {
+      "artist": "LCD Soundsystem",
+      "name": "Disco Infiltrator",
+      "album": "LCD Soundsystem",
+      "genre": "Electronic Dance"
+    },
+    {
+      "artist": "Steely Dan",
+      "name": "Cousin Dupree",
+      "album": "Two Against Nature",
+      "genre": "Yacht Rock"
+    },
+    {
+      "artist": "Marcos Valle",
+      "name": "Naturalmente",
+      "album": "Marcos Valle",
+      "genre": "Samba"
+    },
+    {
+      "artist": "Daniel Steinburg",
+      "name": "Shut Up",
+      "album": "Shut Up",
+      "genre": "House"
+    },
+    {
+      "artist": "Sven Libaek",
+      "name": "Growing Up Now",
+      "album": "Inner Space",
+      "genre": "Electronic Jazz"
+    }
+  ]
+}
