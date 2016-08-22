@@ -1,40 +1,40 @@
 {
   "songs": [
     {
-      "name": "Six Pack",
       "artist": "Jeff the Brotherhood",
+      "name": "Six Pack",
       "album": "Hypnotic Nights",
       "genre": "Garage"
     },
     {
-      "name": "Born Under Punches",
       "artist": "Talking Heads",
+      "name": "Born Under Punches",
       "album": "Remain in Light",
       "genre": "New wave"
     },
     {
-      "name": "I Got the News",
       "artist": "Steely Dan",
+      "name": "I Got the News",
       "album": "Aja",
       "genre": "Yacht Rock"
     },
     {
-      "name": "Funky Kingston",
       "artist": "Toots and the Maytals",
+      "name": "Funky Kingston",
       "album": "1973",
       "genre": "Reggae"
     },
     {
-      "name": "See No Evil",
       "artist": "Television",
-      "album": "1977",
+      "name": "See No Evil",
+      "album": "Marquee Moon",
       "genre": "Art Punk"
     },
     {
-      "name": "Paradise",
       "artist": "Change",
+      "name": "Paradise",
       "album": "Change",
-      "genre": "1981"
+      "genre": "Disco Funk"
     }
   ]
 }
